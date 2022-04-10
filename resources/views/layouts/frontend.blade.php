@@ -15,7 +15,6 @@
     <link rel="apple-touch-icon" href="{{ asset('frontend/images/content/favicon.png') }}" />
     <!-- Place favicon.ico in the root directory -->
 
-    {{-- <link rel="stylesheet" href="{{ asset('frontend/css/main.css') }}" /> --}}
     <link rel="icon" href="{{ asset('frontend/images/content/favicon.png') }}" />
 
     <meta name="theme-color" content="#000" />
@@ -25,16 +24,16 @@
     <!-- Add your site or application content here -->
 
     <!-- START: HEADER -->
-			@include('components.frontend.navbar');
+			@include('components.frontend.navbar')
     <!-- END: HEADER -->
 
 		{{-- START: CONTENT --}}
-		@yield('content');
+		@yield('content')
 		{{-- END: CONTENT --}}
 
 
     <!-- START: FOOTER -->
-		@include('components.frontend.footer');
+		@include('components.frontend.footer')
     <!-- END: FOOTER -->
 
     <!-- START: LOAD SVG -->
